@@ -1,0 +1,7 @@
+D:\C# - prática\Avaliacao2\bin\Debug\Avaliacao2.exe.config
+D:\C# - prática\Avaliacao2\bin\Debug\Avaliacao2.exe
+D:\C# - prática\Avaliacao2\bin\Debug\Avaliacao2.pdb
+D:\C# - prática\Avaliacao2\obj\Debug\Avaliacao2.csproj.AssemblyReference.cache
+D:\C# - prática\Avaliacao2\obj\Debug\Avaliacao2.csproj.CoreCompileInputs.cache
+D:\C# - prática\Avaliacao2\obj\Debug\Avaliacao2.exe
+D:\C# - prática\Avaliacao2\obj\Debug\Avaliacao2.pdb
