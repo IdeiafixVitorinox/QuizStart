@@ -1,0 +1,1 @@
+Caminho para a app: Avaliacao2\bin\Debug

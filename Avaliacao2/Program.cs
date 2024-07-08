@@ -45,7 +45,7 @@ namespace Avaliacao2
                                     Console.WriteLine("\nParabéns! Ganhaste! O Jogo irá se desligar em 5 Segundos.");
                                     jogo.RegistrarHallOfFame();
                                     Thread.Sleep(5000);
-                                    
+
 
                                     continuar = false;
                                 }
@@ -58,7 +58,7 @@ namespace Avaliacao2
                             else
                             {
                                 Console.WriteLine("Perdeste!");
-                                jogo.RegistrarHallOfFame(); 
+                                jogo.RegistrarHallOfFame();
                                 jogo.ReiniciarJogo();
                             }
                         }
@@ -153,17 +153,17 @@ namespace Avaliacao2
             Questoes.Clear();
             try
             {
-                string caminho = $@"D:/Ficheiros/Perguntas/{Tema}/{Tema}_Nivel{Nivel}.txt";
+                string caminho = $@"{Tema}/{Tema}_Nivel{Nivel}.txt";
                 if (!File.Exists(caminho))
                 {
                     Console.WriteLine($"Arquivo para nível {Nivel} não encontrado. Recarregando nível 1.");
                     Nivel = 1;
-                    caminho = $@"D:/Ficheiros/Perguntas/{Tema}/{Tema}_Nivel1.txt";
+                    caminho = $@"{Tema}/{Tema}_Nivel1.txt";
                 }
                 string[] linhas = File.ReadAllLines(caminho);
                 for (int i = 0; i < linhas.Length; i++)
                 {
-                    
+
                     while (i < linhas.Length && string.IsNullOrWhiteSpace(linhas[i]))
                     {
                         i++;
@@ -308,6 +308,7 @@ namespace Avaliacao2
             Console.Clear();
             Console.WriteLine("A tua pontuação neste nível é: " + pontuacao);
             PontuacaoTotal += pontuacao;
+            Console.WriteLine($"\nA tua pontuação total é de {PontuacaoTotal}");
 
             return pontuacao >= 4;
         }
@@ -325,7 +326,7 @@ namespace Avaliacao2
 
         public void RegistrarHallOfFame()
         {
-            string diretorioHallOfFame = @"D:/Ficheiros";
+            string diretorioHallOfFame = $@"HallOfFame";
             string caminhoHallOfFame = Path.Combine(diretorioHallOfFame, "HallOfFame.txt");
 
             try
